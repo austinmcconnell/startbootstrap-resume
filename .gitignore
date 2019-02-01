@@ -1,1 +1,6 @@
-node_modules
+node_modules/
+vendor/
+css/
+css/resume.min.css
+js/resume.min.js
+
