@@ -4,7 +4,7 @@ jobs:
     docker:
       - image: circleci/node:8
     environment:
-      - SOURCE_BRANCH: add-circle-ci
+      - SOURCE_BRANCH: master
       - TARGET_BRANCH: gh-pages
     steps:
       - checkout
@@ -60,6 +60,6 @@ workflows:
       - build_docs:
           filters:
             branches:
-              only: add-circle-ci
+              only: master
             tags:
               ignore: /.*/
