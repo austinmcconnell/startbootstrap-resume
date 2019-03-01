@@ -70,11 +70,26 @@ p.lead {
   }
 }
 
-.dev-icons {
+.fa-icons {
   font-size: 3rem;
   .list-inline-item i {
     &:hover {
       color: $primary;
     }
   }
+}
+
+
+.dev-icons {
+  font-size: 4rem;
+  .list-inline-item i {
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.dev-icons .line-icons {
+  line-height: 90px;
+  font-size: 5rem;
 }
