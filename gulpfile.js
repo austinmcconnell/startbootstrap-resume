@@ -36,6 +36,17 @@ gulp.task('vendor', function(cb) {
     ])
     .pipe(gulp.dest('./vendor'))
 
+    // Devicons
+  gulp.src([
+      './node_modules/devicon-2.2/**/*',
+      '!./node_modules/devicon-2.2/*.json',
+      '!./node_modules/devicon-2.2/*.md',
+      '!./node_modules/devicon-2.2/!PNG',
+      '!./node_modules/devicon-2.2/!PNG/**/*',
+      '!./node_modules/devicon-2.2/!SVG',
+      '!./node_modules/devicon-2.2/!SVG/**/*'
+    ])
+    .pipe(gulp.dest('./vendor/devicon'))
   // jQuery
   gulp.src([
       './node_modules/jquery/dist/*',
