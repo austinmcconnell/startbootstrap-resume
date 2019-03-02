@@ -45,6 +45,7 @@ jobs:
               cp -a js/ out/js
               cp -a vendor/ out/vendor
               cp -a index.html out/
+              cp -a CNAME out/
               mkdir -p out/.circleci && cp -a .circleci/. out/.circleci/.
               cd out
 
